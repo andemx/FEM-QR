@@ -30,6 +30,10 @@ body {
   outline: none;
 }
 
+.attribution {
+  display: none;
+}
+
 /*
 - Mobile: 375px
 - Desktop: 1440px
