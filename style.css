@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --color-app--back: hsl(212, 45%, 89%);
+  --color-app--front: hsl(0, 0%, 100%);
+  --color-card--back: hsl(0, 0%, 100%);
+  --color-card--front-1: hsl(218, 44%, 22%);
+  --color-card--front-2: hsl(220, 15%, 55%);
+  --radius--out: 16px;
+  --radius--in: 10px;
+  --padding: 16px;
+  --size-image: 288px;
+  --size-card: calc(var(--size-image) + calc(2 * var(--padding))) ;
+}
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:hover {
+  outline: none;
+}
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+.flex, .fem-app, body {
+  display: flex;
+}
+.flex--full, .fem-app {
+  height: 100%;
+}
+.flex--y-center, .fem-app {
+  align-items: center;
+}
+.flex--x-center, .fem-app {
+  justify-content: center;
+}
+.flex--vertical, body {
+  flex-direction: column;
+}
+
+.card, .fem-qr {
+  width: var(--size-card);
+  border-radius: var(--radius--out);
+  background-color: var(--color-card--back);
+  color: var(--color-card--front);
+  padding: var(--padding);
+  text-align: center;
+}
+
+.img {
+  width: var(--size-image);
+  height: var(--size-image);
+  border-radius: var(--radius--in);
+}
+
+.title {
+  font-weight: 700;
+}
+
+.text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fem-app {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-app--back);
+  color: var(--color-app--front);
+}
+
+.fem-qr__title {
+  color: var(--color-card--front-1);
+}
+.fem-qr__description {
+  color: var(--color-card--front-2);
+  padding: 0 var(--padding);
+}/*# sourceMappingURL=style.css.map */

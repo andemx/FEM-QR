@@ -1,0 +1,6 @@
+.#{$customer}-app{        
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--color-app--back);
+    color: var(--color-app--front);
+    @extend .flex,.flex--full,.flex--x-center,.flex--y-center;
+}

@@ -1,0 +1,39 @@
+$customer: "fem";
+$prefix: #{$customer};
+
+//color
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+//size
+$size: 16px;
+
+$size-xxs: calc($size / 16);
+$size-xs: calc($size / 8);
+$size-s: calc($size / 4);
+$size-m: calc($size / 2);
+
+$size-b: calc($size * 2);
+$size-l: calc($size * 4);
+$size-xl: calc($size * 8);
+$size-xxl: calc($size * 16);
+
+$size-image: $size-xxl + $size-b;
+
+:root{
+    --color-app--back: #{$light-gray};
+    --color-app--front: #{$white};
+
+    --color-card--back: #{$white};
+    --color-card--front-1: #{$dark-blue};
+    --color-card--front-2: #{$grayish-blue};
+
+    --radius--out: #{$size};
+    --radius--in: 10px;
+
+    --padding: #{$size};
+    --size-image: #{$size-image};
+    --size-card: calc(var(--size-image) + calc(2 * var(--padding)))
+}

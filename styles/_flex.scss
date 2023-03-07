@@ -1,0 +1,15 @@
+.flex{
+    display:flex; 
+    &--full{
+        height:100%;
+    }
+    &--y-center{
+        align-items: center;
+    }
+    &--x-center{
+        justify-content: center;
+    }
+    &--vertical{
+        flex-direction:column;
+    } 
+}
